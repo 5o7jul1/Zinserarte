@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="icon" href="imagnes/logotipo.png" type="image/png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header_imagotipo-container">
+            <img  class="header_imagotipo" src="imagnes/logotipo.png" alt="">
+        </div>
+        <nav class="header_nav">
+            <ul class="header_nav_ul">
+                <li class="header_nav_li" ><a href="index.html">Inicio</a></li>
+                <li class="header_nav_li"><a href="biografia.html">Biografia</a></li>
+                <li class="header_nav_li"><a href="galeria.html">Galeria</a></li>
+                <li class="header_nav_li"><a href="blog.html">Blog </a></li>
+                <li class="header_nav_li"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <a onclick="abrir_nav()" class="menu" href="#"><button>=</button></a>
+        
+        <div class="overlay" id="menu_mobile">
+            <a onclick="cerrar_nav()" href="" class="cerrar">&times;</a>
+            <div class="overlay_contenido">
+                <a href="index.html">Inicio</a>
+                <a href="biografia.html">Biografia</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="blog.html">Blog </a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </div>
+    </header>
+    <script type="text/javascript" src="javascript/nav.js"></script>
+        
+    </header>
+
+    <main>
+        <form>
+            <h2>Formulario de Contacto</h2>
+                <div class="form_input">
+                    <label>Nombres y Apellidos</label>
+                    <input type="text" placeholder="Nombre completo" required>
+                </div>
+
+                <div class="form_input">
+                    <label>Correo</label>
+                    <input type="email" placeholder="Correo"required>
+                </div>
+
+                <div class="form_input">
+                    <label>Mensaje</label>
+                    <textarea  rows="7" placeholder="Escribe tu mensaje" required></textarea>
+                </div>
+                <div class="boton">
+                    <input type="submit" value="Finalizar"/>
+                </div>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer_imagotipo-container">
+            <img  class="footer_imagatipo" src="imagnes/logotipo.png" alt="">
+        </div>
+        <div class="social-links">
+            <a href="https://www.tiktok.com/@glimpen_art?is_from_webapp=1&sender_device=pc">
+                <img src="imagnes/medios-de-comunicacion-social.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/glimpen_art?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D">
+                <img src="imagnes/instagram.png"alt="">
+            </a>
+        </div>
+    </footer>
+    <div class="autor">
+        <p><span>Desarrollado por:</span> Sofia Arevalo</p>
+    </div>
+    
+</body>
+</html>

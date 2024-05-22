@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="icon" href="imagnes/logotipo.png" type="image/png">
+    <link rel="stylesheet" href="css/estilos2.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header_imagotipo-container">
+            <img  class="header_imagotipo" src="imagnes/logotipo.png" alt="">
+        </div>
+        <nav class="header_nav">
+            <ul class="header_nav_ul">
+                <li class="header_nav_li" ><a href="index.html">Inicio</a></li>
+                <li class="header_nav_li"><a href="biografia.html">Biografia</a></li>
+                <li class="header_nav_li"><a href="galeria.html">Galeria</a></li>
+                <li class="header_nav_li"><a href="blog.html">Blog </a></li>
+                <li class="header_nav_li"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        
+        <a onclick="abrir_nav()" class="menu" href="#"><button>=</button></a>
+        
+        <div class="overlay" id="menu_mobile">
+            <a onclick="cerrar_nav()" href="" class="cerrar">&times;</a>
+            <div class="overlay_contenido">
+                <a href="index.html">Inicio</a>
+                <a href="biografia.html">Biografia</a>
+                <a href="galeria.html">Galeria</a>
+                <a href="blog.html">Blog </a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </div>
+    </header>
+    <script type="text/javascript" src="javascript/nav.js"></script>
+
+
+    <main>
+        <h2>Galeria de arte</h2>
+        <div id="container">
+            <ul class="carrusel">
+                <li id="slide_1">
+                    <img src="imagnes/Imagen_galeria_1.png" alt="Ilustracion 1">
+                </li>
+                <li id="slide_2">
+                    <img src="imagnes/Imagen_galeria_2.png" alt="Ilustracion 2">
+                </li>
+                <li id="slide_3">
+                    <img src="imagnes/Imagen_galeria_3.png" alt="Ilustracion 3">
+                </li>
+                <li id="slide_4">
+                    <img src="imagnes/Imagen_galeria_4.png" alt="Ilustracion 4">
+                </li>
+                <li id="slide_5">
+                    <img src="imagnes/Imagen_galeria_5.png" alt="Ilustracion 5">
+                </li>
+            </ul>
+
+            <ul class="menu_carrusel">
+                <li>
+                    <a href="#slide_1">1</a>
+                </li>
+                <li>
+                    <a href="#slide_2">2</a>
+                </li>
+                <li>
+                    <a href="#slide_3">3</a>
+                </li>
+                <li>
+                    <a href="#slide_4">4</a>
+                </li>
+                <li>
+                    <a href="#slide_5">5</a>
+                </li>
+            </ul>
+        </div>
+        <div class="fuente">
+            <p>Imagenes tomadas de su Instagram</p>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer_imagotipo-container">
+            <img  class="footer_imagatipo" src="imagnes/logotipo.png" alt="">
+        </div>
+        <div class="social-links">
+            <a href="https://www.tiktok.com/@glimpen_art?is_from_webapp=1&sender_device=pc">
+                <img src="imagnes/medios-de-comunicacion-social.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/glimpen_art?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D">
+                <img src="imagnes/instagram.png"alt="">
+            </a>
+        </div>
+    </footer>
+    
+    <div class="autor">
+        <p><span>Desarrollado por:</span> Sofia Arevalo</p>
+    </div>
+
+</body>
+</html>

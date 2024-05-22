@@ -1,0 +1,86 @@
+
+@media screen and (max-width: 768px) {
+    .header_nav_ul {
+        display: none;
+    }
+
+    .menu{
+        display: inherit;
+    }
+}
+
+@media screen and (max-height: 480px) {
+    .header .overlay a{
+        font-size: 20px;
+    }
+    
+    .header .overlay .cerrar{
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media (max-width:480px){
+    .segunda_bienvenida{
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        gap:12px
+    }
+    .bienvenida_title h1{
+        font-size: 20px;
+        padding-bottom: 4px;
+    }
+
+    .segunda_bienvenida p{
+        font-size: 10px;
+    }
+    .segunda_bienvenida span{
+        font-size: 12px;
+    }
+    .segunda_bienvenida-imagen{
+        width: 80%;
+        height: 80%;
+        object-fit: contain;
+    }
+}
+
+@media (max-width:768px){
+    .segunda_bienvenida{
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr;
+        grid-auto-rows: 300px;
+        gap:10px
+    }
+    .segunda_bienvenida p{
+        font-size: 14px;
+    }
+    .segunda_bienvenida span{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:480px){
+    .blogs-main-new{
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+    }
+    .blogs-new-img-container{
+        grid-row: 2;
+    }
+    .blogs-new-info-container{
+        grid-column: 1;
+        grid-row: 3;
+    } 
+    .blogs-posts-container .post-container{
+        max-width: 45%;
+    }
+}
+
+@media (max-width:768px){
+    .blogs-posts-container .post-container{
+        max-width: 90%;
+    }
+}
+
+
